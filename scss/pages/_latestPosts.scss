@@ -1,0 +1,49 @@
+@use "../base" as *;
+.latest-posts {
+  width: 100%;
+  height: 40rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  .txt-post {
+    font-size: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+  }
+  .posts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+    .post {
+      display: grid;
+      row-gap: 1rem;
+      img {
+        width: 28.5rem;
+      }
+      span {
+        color: $phar-color;
+        font-size: 1.5rem;
+        b {
+          font-weight: 400;
+          color: #592ea9;
+        }
+      }
+      h3 {
+        font-size: 2rem;
+        width: 24rem;
+        line-height: 2.9rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: $phar-color;
+      }
+    }
+  }
+  .line {
+    width: 80%;
+    height: 0.1rem;
+    margin: 4rem auto;
+    opacity: 0.3;
+    background: #6d6e76;
+  }
+}

@@ -1,0 +1,45 @@
+@use "../base" as *;
+header {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background-color: $black-color;
+  nav {
+    justify-content: space-between;
+    .nav-logo {
+      padding-top: 0.8rem;
+      img {
+        width: 12rem;
+      }
+    }
+    .nav-items {
+      ul {
+        align-items: center;
+        gap: 2rem;
+        li {
+          a {
+            font-size: 1.5rem;
+            color: $white-color;
+            button {
+              background-color: $white-color;
+              transition: 0.1s linear;
+              &:hover {
+                background-color: $main-color;
+                color: $white-color;
+                transition: 0.1s linear;
+              }
+            }
+            &:hover {
+              text-decoration: underline;
+              transition: 0.1s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}

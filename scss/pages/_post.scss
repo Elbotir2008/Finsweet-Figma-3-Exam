@@ -1,0 +1,61 @@
+@use "../base" as *;
+.post-section {
+  width: 100%;
+  height: 60rem;
+  padding-top: 10rem;
+  .post-img {
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    img {
+      height: 30rem;
+      width: 70rem;
+    }
+  }
+  .post-content {
+    padding-left: 15rem;
+    padding-bottom: 5rem;
+    h1 {
+      color: #592ea9;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+    }
+    h2 {
+      font-family: Inter;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $phar-color;
+      margin-bottom: 5rem;
+    }
+    h3 {
+      color: $black-color;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 5rem;
+      width: 67rem;
+      line-height: 4.5rem;
+    }
+    h4 {
+      margin-bottom: 5rem;
+      color: $black-color;
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+    h5 {
+      margin-top: 5rem;
+      color: $phar-color;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      width: 70rem;
+    }
+    h6 {
+      width: 70rem;
+      margin-top: 5rem;
+      color: $phar-color;
+      font-size: 1.3rem;
+    }
+  }
+}
+.post-footer {
+  margin-top: 40rem;
+}

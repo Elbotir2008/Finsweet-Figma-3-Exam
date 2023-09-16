@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: Inter;
+}
+
+span {
+  display: inline-block;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #22343d;
+  font-weight: 400;
+  cursor: pointer;
+}
+a:hover {
+  -webkit-text-decoration: under line;
+          text-decoration: under line;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.flex-class {
+  display: flex;
+}
+
+.grid-class {
+  display: grid;
+}
+
+.selected {
+  font-weight: 700;
+  color: #22343d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+button {
+  background: #ffd050;
+  color: #232536;
+  font-weight: 800;
+  padding: 9px 50px;
+}
+
+header {
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background-color: #232536;
+}
+header nav {
+  justify-content: space-between;
+}
+header nav .nav-logo {
+  padding-top: 0.8rem;
+}
+header nav .nav-logo img {
+  width: 12rem;
+}
+header nav .nav-items ul {
+  align-items: center;
+  gap: 2rem;
+}
+header nav .nav-items ul li a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+header nav .nav-items ul li a button {
+  background-color: #fff;
+  transition: 0.1s linear;
+}
+header nav .nav-items ul li a button:hover {
+  background-color: #ffd050;
+  color: #fff;
+  transition: 0.1s linear;
+}
+header nav .nav-items ul li a:hover {
+  text-decoration: underline;
+  transition: 0.1s linear;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #232536;
+}
+footer .footer-container {
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+footer .footer-container .footer-left {
+  font-size: 1.2rem;
+  display: grid;
+  row-gap: 10px;
+  color: #6d6e76;
+}
+footer .footer-container .footer-right {
+  padding-top: 1rem;
+}
+footer .footer-container .footer-right img {
+  cursor: pointer;
+}
+
+.login-section {
+  width: 100%;
+  padding: 10rem;
+}
+.login-section .container-login {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.login-section .container-login h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.login-section .container-login input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+}
+.login-section .container-login a {
+  text-align: center;
+}
+.login-section .container-login a button {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.home-section {
+  width: 103%;
+  height: 100vh;
+  padding: 17rem 10rem;
+  background: radial-gradient(80% 71.93% at 74% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+.home-section img {
+  position: absolute;
+  z-index: -1;
+  width: 102vw;
+  height: 89vh;
+  margin: -11rem;
+}
+
+.home-container {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  row-gap: 2rem;
+  display: grid;
+  width: 100%;
+}
+.home-container span {
+  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+}
+.home-container span b {
+  font-weight: 900;
+  margin-left: 1rem;
+  color: #fff;
+}
+.home-container h1 {
+  font-size: 3rem;
+  color: #fff;
+  width: 50rem;
+}
+.home-container h5 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 100;
+}
+.home-container h5 b {
+  color: #ffd050;
+}
+.home-container p {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 100;
+  width: 45rem;
+  line-height: 2.5rem;
+}
+.home-container button {
+  font-weight: 700;
+  transition: 0.2s linear;
+}
+.home-container button:hover {
+  background-color: #fff;
+  transition: 0.1s linear;
+}
+
+.latest-posts {
+  width: 100%;
+  height: 40rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.latest-posts .txt-post {
+  font-size: 3rem;
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+}
+.latest-posts .posts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+.latest-posts .posts .post {
+  display: grid;
+  row-gap: 1rem;
+}
+.latest-posts .posts .post img {
+  width: 28.5rem;
+}
+.latest-posts .posts .post span {
+  color: #6d6e76;
+  font-size: 1.5rem;
+}
+.latest-posts .posts .post span b {
+  font-weight: 400;
+  color: #592ea9;
+}
+.latest-posts .posts .post h3 {
+  font-size: 2rem;
+  width: 24rem;
+  line-height: 2.9rem;
+}
+.latest-posts .posts .post p {
+  font-size: 1.1rem;
+  color: #6d6e76;
+}
+.latest-posts .line {
+  width: 80%;
+  height: 0.1rem;
+  margin: 4rem auto;
+  opacity: 0.3;
+  background: #6d6e76;
+}
+
+.catagory {
+  width: 100%;
+  margin-top: 30rem;
+  margin-bottom: 10rem;
+  height: 30rem;
+}
+.catagory h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.catagory .catagory-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 8rem;
+  padding-left: 5rem;
+}
+.catagory .catagory-cards .card {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  padding: 2rem;
+  border: 1px solid #6d6e76;
+}
+.catagory .catagory-cards .card:hover {
+  background-color: #ffd050;
+  transition: 0.2s linear;
+}
+.catagory .catagory-cards .card :hover {
+  background-color: #ffd050;
+  transition: 0.3s linear;
+}
+.catagory .catagory-cards .card h2 {
+  font-size: 1.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+.catagory .catagory-cards .card p {
+  color: #6d6e76;
+  font-size: 1.1rem;
+}
+.catagory .catagory-cards .card-3 {
+  padding-top: 2.5rem;
+}
+.catagory .catagory-cards .card-3 img {
+  margin-bottom: 1rem;
+}
+.catagory .catagory-cards .card-yellow {
+  background-color: #ffd050;
+}
+.catagory .catagory-cards .card-yellow img {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.all-catagory {
+  width: 100%;
+  height: 110rem;
+  margin-top: 15rem;
+  padding: 0 5rem;
+}
+.all-catagory .allCatagory-title {
+  padding-bottom: 5rem;
+}
+.all-catagory .allCatagory-title input {
+  width: 100%;
+  height: 5rem;
+  padding: 2.5rem;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+}
+.all-catagory .allCatagory-title h1 {
+  padding-top: 5rem;
+  font-size: 3.5rem;
+}
+.all-catagory .cat-card {
+  padding-top: 5rem;
+}
+.all-catagory .cat-card img {
+  width: 30rem;
+}
+.all-catagory .cat-card .d11 {
+  margin-left: 4rem;
+}
+.all-catagory .cat-card .d11 .p11 {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #592ea9;
+  letter-spacing: 0.3rem;
+}
+.all-catagory .cat-card .d11 .p12 {
+  font-size: 2rem;
+  color: #232536;
+  margin-bottom: 4rem;
+  display: inline-block;
+}
+.all-catagory .cat-card .d11 .p13 {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #6d6e76;
+}
+
+.myFooter {
+  margin-top: 6rem;
+  z-index: 1;
+}
+
+.pagination {
+  margin-top: 10rem;
+  margin-left: 37rem;
+  align-items: center;
+}
+.pagination button {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.pagination button:hover {
+  color: #6d6e76;
+  transition: 0.1s linear;
+}
+.pagination span {
+  font-size: 1.5rem;
+}
+
+.allPosts-section {
+  width: 100%;
+  height: 110rem;
+  margin-top: 15rem;
+  padding: 0 5rem;
+}
+.allPosts-section .allPosts-title {
+  padding-bottom: 5rem;
+}
+.allPosts-section .allPosts-title input {
+  width: 100%;
+  height: 5rem;
+  padding: 2.5rem;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+}
+.allPosts-section .allPosts-title h1 {
+  padding-top: 5rem;
+  font-size: 3.5rem;
+}
+.allPosts-section .line2 {
+  width: 100%;
+  margin: 0 auto;
+  height: 0.1rem;
+  background: #6d6e76;
+  margin-bottom: 4rem;
+  margin-top: -1rem;
+  opacity: 0.32;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card {
+  padding-top: 2rem;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card .post-img {
+  padding-right: 2rem;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card .post-img img {
+  width: 30rem;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card .post-text span {
+  color: #592ea9;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card .post-text h3 {
+  width: 55rem;
+  font-size: 2.5rem;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card .post-text p {
+  font-size: 1.2rem;
+  color: #6d6e76;
+}
+.allPosts-section .allPosts-body .allPosts-cards .allPosts-card .post-text * {
+  margin-top: 1rem;
+}
+
+.myFooter {
+  margin-top: 6rem;
+  z-index: 1;
+}
+
+.pagination {
+  margin-top: 10rem;
+  margin-left: 37rem;
+  align-items: center;
+}
+.pagination button {
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.pagination button:hover {
+  color: #6d6e76;
+  transition: 0.1s linear;
+}
+.pagination span {
+  font-size: 1.5rem;
+}
+
+.blog-section1 {
+  width: 100%;
+  height: 120rem;
+  margin-top: 6.5rem;
+  margin-bottom: -10rem;
+  padding-top: 5rem;
+}
+.blog-section1 .our-blog {
+  padding: 5rem;
+  height: 25rem;
+  background-color: #f4f0f8;
+  width: 80%;
+  margin: 0 auto;
+  gap: 10rem;
+}
+.blog-section1 .our-blog .ourBlogArrows b {
+  display: inline-block;
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+  color: #232536;
+}
+.blog-section1 .our-blog .ourBlogArrows h2 {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #232536;
+}
+.blog-section1 .our-blog .ourBlogArrows p {
+  color: #6d6e76;
+  font-size: 1.1rem;
+  width: 27rem;
+}
+.blog-section1 .ourBlog-bottom {
+  width: 80%;
+  margin: 0 auto;
+  height: 70rem;
+  padding-top: 10rem;
+}
+.blog-section1 .ourBlog-bottom .blogBottom2 {
+  margin-top: 7rem;
+}
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-left1 {
+  margin-right: 3rem;
+}
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-left2 {
+  margin-right: 3rem;
+}
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-left1 b,
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-right2 b {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  color: #232536;
+}
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-left1 h5,
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-right2 h5 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: #232536;
+}
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-left1 p,
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-right2 p {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  color: #6d6e76;
+}
+.blog-section1 .ourBlog-bottom .blogBottom-arrow .blogBottom-img img {
+  width: 35rem;
+}
+
+.post-section {
+  width: 100%;
+  height: 60rem;
+  padding-top: 10rem;
+}
+.post-section .post-img {
+  padding-bottom: 5rem;
+  padding-left: 10rem;
+}
+.post-section .post-img img {
+  height: 30rem;
+  width: 70rem;
+}
+.post-section .post-content {
+  padding-left: 15rem;
+  padding-bottom: 5rem;
+}
+.post-section .post-content h1 {
+  color: #592ea9;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.post-section .post-content h2 {
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6d6e76;
+  margin-bottom: 5rem;
+}
+.post-section .post-content h3 {
+  color: #232536;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  width: 67rem;
+  line-height: 4.5rem;
+}
+.post-section .post-content h4 {
+  margin-bottom: 5rem;
+  color: #232536;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.post-section .post-content h5 {
+  margin-top: 5rem;
+  color: #6d6e76;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  width: 70rem;
+}
+.post-section .post-content h6 {
+  width: 70rem;
+  margin-top: 5rem;
+  color: #6d6e76;
+  font-size: 1.3rem;
+}
+
+.post-footer {
+  margin-top: 40rem;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=style.css.map */

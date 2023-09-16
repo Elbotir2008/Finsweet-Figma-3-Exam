@@ -1,0 +1,7 @@
+@use "../base" as *;
+button {
+  background: $main-color;
+  color: $black-color;
+  font-weight: 800;
+  padding: 9px 50px;
+}

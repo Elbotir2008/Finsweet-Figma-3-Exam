@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: Inter;
+}
+span {
+  display: inline-block;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: #22343d;
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    text-decoration: under line;
+  }
+}
+li {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.flex-class {
+  display: flex;
+}
+.grid-class {
+  display: grid;
+}
+.selected {
+  font-weight: 700;
+  color: #22343d;
+}
+// main {
+//   z-index: -1;
+// }

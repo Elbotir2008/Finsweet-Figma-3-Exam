@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All posts</title>
+    <link rel="stylesheet" href="../scss/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="flex-class">
+          <div class="nav-logo">
+            <a href="../pages/home.html">
+              <img src="../images/Logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="nav-items">
+            <ul class="flex-class">
+              <li><a href="../pages/home.html">Home</a></li>
+              <li><a href="../pages/home.html">Blog</a></li>
+              <li><a href="../pages/blog.html">About Us</a></li>
+              <li><a href="../index.html">Resgiter</a></li>
+              <li>
+                <a href="../pages/login.html"><button>Login</button></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="allPosts-section">
+        <div class="container">
+          <div class="allPosts-title">
+            <input type="text" id="allPosts-input" placeholder="Searching..." />
+            <h1>All posts</h1>
+          </div>
+          <div class="line2"></div>
+          <div class="allPosts-body">
+            <div class="allPosts-cards" id="allPostCards"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="pagination flex-class">
+      <button class="pagination-btn" id="pagination-btn1">< Prev</button>
+      <span>1 2...10</span>
+      <button class="pagination-btn" id="pagination-btn2">Next ></button>
+    </div>
+
+    <footer class="myFooter">
+      <div class="container footer-container flex-class">
+        <div class="footer-left">
+          <span>Finstreet 118 2561 Fintown</span>
+          <p>Hello@finsweet.com 020 7993 2905</p>
+        </div>
+        <div class="footer-right">
+          <img src="../images/Social wrapper.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/all.js"></script>
+  </body>
+</html>
